@@ -1,24 +1,56 @@
 package francescocicala;
 
 import java.util.HashMap;
+import java.util.Map;
 
-public class Alliance extends HashMap<String, Eidos> {
+public class Alliance {
+  private final Map<String, Eidos> internal;
 
-  private static final long serialVersionUID = 1L;
-
-  public void addEidos(Eidos eidos) {
-    this.putIfAbsent(eidos.getName(), eidos);
+  /**
+   * Construct the Alliance object, which is a collection of unique Eidos objects.
+   */
+  public Alliance() {
+    internal = new HashMap<String, Eidos>();
   }
 
-  public void removeEidos(Eidos eidos) {
-    this.remove(eidos.getName());
+  /**
+   * Add an Eidos to the Alliance.
+   * @param eidos Eidos object to add to the Alliance.
+   */
+  public void addEidos(final Eidos eidos) {
+    internal.putIfAbsent(eidos.getName(), eidos);
   }
 
+  /**
+   * Remove the given Eidos from the Alliance.
+   * @param eidos Eidos object to remove from the Alliance.
+   */
+  public void removeEidos(final Eidos eidos) {
+    internal.remove(eidos.getName());
+  }
+
+  /**
+   * Returns the number of Eidos belonging to the Alliance.
+   * @return Integer
+   */
   public Integer cardinality() {
-    return this.size();
+    return internal.size();
   }
 
+  /**
+   * Return true if the Alliance is empty.
+   * @return boolean
+   */
+  public boolean isEmpty() {
+    return internal.isEmpty();
+  }
 
-
-
+  /**
+   * Returns true if the input Eidos belongs to the Alliance.
+   * @param eidos Eidos target.
+   * @return boolean
+   */
+  public boolean contains(final Eidos eidos) {
+    return internal.containsKey(eidos.getName());
+  }
 }

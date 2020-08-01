@@ -22,7 +22,14 @@ public class AllianceTest {
   public void testAddEidos() {
     Alliance alliance = new Alliance();
     alliance.addEidos(sandokan);
-    assertTrue(alliance.containsKey(sandokan.getName()) && alliance.containsValue(sandokan));
+    assertEquals(1, alliance.cardinality());
+  }
+
+  @Test
+  public void testContains() {
+    Alliance alliance = new Alliance();
+    alliance.addEidos(drake);
+    assertTrue(alliance.contains(drake));
   }
 
   @Test
@@ -47,6 +54,6 @@ public class AllianceTest {
     alliance.addEidos(sigfried);
     alliance.addEidos(drake);
     alliance.removeEidos(sigfried);
-    assertFalse(alliance.containsValue(sigfried));
+    assertFalse(alliance.contains(sigfried));
   }
 }
