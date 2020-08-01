@@ -1,19 +1,48 @@
 package francescocicala;
 
 public class Eidos {
-    private int attack, defense;
+  private String name;
+  private int attack;
+  private int defense;
 
-	public Eidos(int attack, int defense) {
-        this.attack = attack;
-        this.defense = defense;
-	}
+  /**
+   * Construct an Eidos object. An Eidos is a mythical hero with a unique name. 
+   * It has attack and defense values.
+   * @param name eidos' name
+   * @param attack eidos' attack value
+   * @param defense eidos' defense value
+   */
+  public Eidos(String name, int attack, int defense) {
+    this.name = name;
+    this.attack = attack;
+    this.defense = defense;
+  }
 
-	public Integer getAtt() {
-		return this.attack;
-	}
+  
+  /** 
+   * Returns the name of the eidos.
+   * @return String
+   */
+  public String getName() {
+    return name;
+  }
+  
+  
+  /** 
+   * Returns the attack value.
+   * @return Integer
+   */
+  public Integer getAtt() {
+    return attack;
+  }
 
-	public Integer getDef() {
-		return this.defense;
-	}
+  
+  /** 
+   * Returns the defense value.
+   * @return Integer
+   */
+  public Integer getDef() {
+    return defense;
+  }
 
 }
