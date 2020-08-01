@@ -22,8 +22,8 @@ If the HP of a Mage are zero or less, that Mage has been defeated and the other 
 1. Open new issue
 2. Checkout new branch
 3. Write tests
-4. Write the new features in the easiest way they can pass the test
-5. Refactor them
+4. Write the new feature in the easiest way it can pass the test
+5. Refactor feature code
 6. Write short documentation
 7. Create pull request linked to the issue
 8. Merge to develop
