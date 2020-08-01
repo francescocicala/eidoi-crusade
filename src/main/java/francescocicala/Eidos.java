@@ -6,7 +6,8 @@ public class Eidos {
   private int defense;
 
   /**
-   * Construct an Eidos object.
+   * Construct an Eidos object. An Eidos is a mythical hero with a unique name. 
+   * It has attack and defense values.
    * @param name eidos' name
    * @param attack eidos' attack value
    * @param defense eidos' defense value
