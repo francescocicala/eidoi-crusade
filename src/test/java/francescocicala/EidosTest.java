@@ -16,7 +16,6 @@ public class EidosTest {
     public void correctAtt() {
         assertEquals(attack, eidos.getAtt());
     }
-
     @Test
     public void correctDef() {
         assertEquals(defense, eidos.getDef());

@@ -9,14 +9,12 @@ public class Eidos {
         this.attack = attack;
         this.defense = defense;
 	}
-
 	public String getName() {
 		return name;
 	}
 	public Integer getAtt() {
 		return attack;
 	}
-
 	public Integer getDef() {
 		return defense;
 	}
