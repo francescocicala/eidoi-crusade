@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+  <class>
+    <eidos>
+      <name>Sigfried</name>
+      <attack>4</attack>
+      <defense>3</defense>
+    </eidos>
+
+    <eidos>
+      <name>Jeanne D'Arc</name>
+      <attack>1</attack>
+      <defense>4</defense>
+    </eidos>
+
+    <eidos>
+      <name>Hattori Hanzo</name>
+      <attack>3</attack>
+      <defense>5</defense>
+    </eidos>
+
+    <eidos>
+      <name>Sandokan</name>
+      <attack>5</attack>
+      <defense>1</defense>
+    </eidos>
+
+    <eidos>
+      <name>Francis Drake</name>
+      <attack>3</attack>
+      <defense>3</defense>
+    </eidos>
+
+    <eidos>
+      <name>Dumbledore</name>
+      <attack>6</attack>
+      <defense>2</defense>
+    </eidos>
+
+    <eidos>
+      <name>Dante</name>
+      <attack>3</attack>
+      <defense>6</defense>
+    </eidos>
+
+    <eidos>
+      <name>Arzachel</name>
+      <attack>3</attack>
+      <defense>3</defense>
+    </eidos>
+
+    <eidos>
+      <name>Mulan</name>
+      <attack>4</attack>
+      <defense>4</defense>
+    </eidos>
+
+    <eidos>
+      <name>Radagast</name>
+      <attack>2</attack>
+      <defense>4</defense>
+    </eidos>
+  </class>

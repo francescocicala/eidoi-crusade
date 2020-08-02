@@ -6,7 +6,8 @@ public class Eidos {
   private int defense;
 
   /**
-   * Construct an Eidos object.
+   * Construct an Eidos object. An Eidos is a mythical hero with a unique name. 
+   * It has attack and defense values.
    * @param name eidos' name
    * @param attack eidos' attack value
    * @param defense eidos' defense value
@@ -16,7 +17,6 @@ public class Eidos {
     this.attack = attack;
     this.defense = defense;
   }
-
   
   /** 
    * Returns the name of the eidos.
@@ -26,7 +26,6 @@ public class Eidos {
     return name;
   }
   
-  
   /** 
    * Returns the attack value.
    * @return Integer
@@ -34,7 +33,6 @@ public class Eidos {
   public Integer getAtt() {
     return attack;
   }
-
   
   /** 
    * Returns the defense value.
@@ -42,6 +40,15 @@ public class Eidos {
    */
   public Integer getDef() {
     return defense;
+  }
+
+  /**
+   * Returns the string with informations about name, attack value and defense value of the Eidos.
+   * @return String
+   */
+  public String showInfoString() {
+    String out = getName() + " | ATT: " + getAtt().toString() + " | DEF: " + getDef().toString();
+    return out;    
   }
 
 }
