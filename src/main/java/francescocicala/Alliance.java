@@ -63,5 +63,6 @@ public class Alliance {
     for (Eidos eidos : internal.values()) {
       out += eidos.showInfoString() + "\n";
     }
+    return out;
   }
 }
