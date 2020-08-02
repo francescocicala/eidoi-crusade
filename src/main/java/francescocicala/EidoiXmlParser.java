@@ -13,6 +13,14 @@ import org.xml.sax.SAXException;
 
 public class EidoiXmlParser {
   
+  /** 
+   * Returns the array of Eidoi contained in the xml file at xmlPath.
+   * @param xmlPath Relative path of the xml file with Eidoi
+   * @return Eidos[]
+   * @throws SAXException
+   * @throws IOException
+   * @throws ParserConfigurationException
+   */
   public Eidos[] getEidoiArr(String xmlPath)
   throws SAXException, IOException, ParserConfigurationException {
     NodeList nodeList = getEidoiNodeList(xmlPath);
@@ -33,11 +41,27 @@ public class EidoiXmlParser {
     return eidoiArr;
   }
 
+  /** 
+   * Returns the number of Eidoi found in the xml file at xmlPath.
+   * @param xmlPath
+   * @return Integer
+   * @throws ParserConfigurationException
+   * @throws SAXException
+   * @throws IOException
+   */
   public Integer getEidoiNum(String xmlPath) throws ParserConfigurationException, SAXException, IOException {
     NodeList nodeList = getEidoiNodeList(xmlPath);
     return nodeList.getLength();
   }
 
+  /** 
+   * Returns the NodeList with the nodes at the xmlPath.
+   * @param xmlPath
+   * @return NodeList
+   * @throws ParserConfigurationException
+   * @throws SAXException
+   * @throws IOException
+   */
   private NodeList getEidoiNodeList(String xmlPath) throws ParserConfigurationException, SAXException, IOException {
     File file = new File(xmlPath);
     DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
