@@ -13,12 +13,22 @@ public class ShuffledDeck {
   private final Eidos[] eidoiArr;
   private Deque<Eidos> internal;
 
+  /**
+   * Construct a ShuffledDeck object containing the Eidoi found in the .xml file at xmlFilename path.
+   * @param xmlFilename Relative path to the .xml file
+   * @throws SAXException
+   * @throws IOException
+   * @throws ParserConfigurationException
+   */
   ShuffledDeck(final String xmlFilename) throws SAXException, IOException, ParserConfigurationException {
     eidoiArr = xmlParser.getEidoiArr(xmlFilename);
     shuffleDeck();
   }
 
-  private void shuffleDeck() {
+  /**
+   * Reshuffles all the Eidoi in the deck.
+   */
+  public void shuffleDeck() {
     final Integer[] randomNum = new Integer[eidoiArr.length];
     for (int i = 0; i < randomNum.length; i++) {
       randomNum[i] = i;
@@ -30,14 +40,28 @@ public class ShuffledDeck {
     }
   }
 
+  /** 
+   * Returns the Integer number of the full deck of Eidoi.
+   * @return Integer
+   */
   public Integer getFullSize() {
     return eidoiArr.length;
   }
 
+  /** 
+   * Returns the Integer number of the Eidoi in the current state of the deck.
+   * @return Integer
+   */
   public Integer getCurrentSize() {
     return internal.size();
   }
 
+  
+  /** 
+   * Returns the array containing the drawn Eidoi.
+   * @param num Number of Eidoi to draw
+   * @return Eidos[]
+   */
   public Eidos[] draw(final int num) {
     if (num > getCurrentSize()) {
       throw new IllegalStateException();
