@@ -24,4 +24,9 @@ public class EidosTest {
   public void correctDef() {
     assertEquals(defense, eidos.getDef());
   }
+
+  @Test
+  public void correctInfoString() {
+    assertEquals(eidos.showInfoString(), "Sigfried | ATT: 4 | DEF: 3");
+  }
 }
