@@ -53,4 +53,15 @@ public class Alliance {
   public boolean contains(final Eidos eidos) {
     return internal.containsKey(eidos.getName());
   }
+
+  /**
+   * Returns string with info about the Eidoi in the Alliance.
+   * @return String
+   */
+  public String showAllianceString() {
+    String out = "";
+    for (Eidos eidos : internal.values()) {
+      out += eidos.showInfoString() + "\n";
+    }
+  }
 }
