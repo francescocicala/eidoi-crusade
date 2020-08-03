@@ -1,9 +1,6 @@
 package francescocicala;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
@@ -21,8 +18,8 @@ public class EvocationManager {
    */
   public EvocationManager(String pathToXml, Integer numOfDrafts) {
     mages = new Mage[2];
-    mages[0] = new Mage();
-    mages[1] = new Mage();
+    mages[0] = new Mage("Mage 1");
+    mages[1] = new Mage("Mage 2");
     numberOfDrafts = numOfDrafts;
     pathToXmlFile = pathToXml;
   }
