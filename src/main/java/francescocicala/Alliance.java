@@ -59,6 +59,10 @@ public class Alliance {
    * @return String
    */
   public String showAllianceString() {
+    if (isEmpty()) {
+      String out = "Empty alliance.";
+      return out;
+    }
     String out = "";
     for (Eidos eidos : internal.values()) {
       out += eidos.showInfoString() + "\n";
