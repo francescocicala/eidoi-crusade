@@ -51,6 +51,9 @@ public class AllianceTest {
   @Test
   public void testRemoveEidos() {
     Alliance alliance = new Alliance();
+    alliance.removeEidos(sigfried);
+    assertTrue(alliance.cardinality() == 0);
+    
     alliance.addEidos(sigfried);
     alliance.addEidos(drake);
     alliance.removeEidos(sigfried);
