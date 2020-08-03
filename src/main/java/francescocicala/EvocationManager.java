@@ -35,8 +35,8 @@ public class EvocationManager {
     ShuffledDeck deck = new ShuffledDeck(pathToXmlFile);
     for (Integer i = 1; i <= numberOfDrafts; i++) {
       Eidos[] eidoiDraft = deck.draw(2);
-      System.out.println("Mage 1 draws " + eidoiDraft[0].showInfoString() + "\nMage 2 draws " 
-          + eidoiDraft[1].showInfoString() + "\n");
+//      System.out.println("Mage 1 draws " + eidoiDraft[0].showInfoString() + "\nMage 2 draws " 
+//          + eidoiDraft[1].showInfoString() + "\n");
       mages[0].draw(eidoiDraft[0]);
       mages[1].draw(eidoiDraft[1]);
     }
