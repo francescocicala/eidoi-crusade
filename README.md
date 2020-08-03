@@ -1,11 +1,11 @@
-# Eidoi Crusade
+# Eidoi Crusade 0.1
 A java-based two-players card game. You are a *Mage*, fighting against your rival for the Sacred Graal. You will lead your alliance of mythical heroes into a new legend!
 
 ## Game mechanics
-The game is very simple. The first phase is called **Evocation**, and every Mage will select the heroes that will compose his alliance. The second phase is the **Crusade**, where the Mages will send their heroes into the battle. Your goal is to reduce the Health Points of the rival Mage to zero before he does the same with you!
+The game is very simple. The first phase is called **Evocation**, and every Mage's alliance will be randomly created. The second phase is the **Crusade**, where the Mages will send their heroes into the battle. Your goal is to reduce the Health Points of the rival Mage to zero before he does the same with you!
 
 #### Evocation Phase
-The protagonists of this Crusade are the Eidoi, mythical heroes evoked from the legend. They are 10, and four of them will compose your alliance. They have a name, an attack value and a defense value. The Evocation Phase is formed by four drafts, where two heroes are randomly sampled. The two Mages will select their Eidos with alternated priority, until they will have formed their team. There will be no repetitions during the drafts, so that the 8 heroes in game will be unique.
+The protagonists of this Crusade are the Eidoi, mythical heroes evoked from the legend. They are 10, and four of them will compose your alliance. They have a name, an attack value and a defense value. Every Mage will control an Alliance. An alliance is made up of 4 Eidoi which are randomly selected. There will be no repetitions during the draft, so that the 8 heroes in game will be unique.
 
 #### Crusade Phase
 The Crusade Phase is made up of battles, which will follow one another until one of the two Mages is defeated. Mages choose at the same time an Eidos from their alliance, together with an order. The chosen Eidos will be sent into the next battle with that order. Mages can choose one of two possible orders before each battle, after having selected the Eidos: 1) attack the rival Eidos; 2) attack the rival Mage.
