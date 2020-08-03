@@ -1,6 +1,8 @@
 # Eidoi Crusade 0.1
 A java-based two-players card game. You are a *Mage*, fighting against your rival for the Sacred Graal. You will lead your alliance of mythical heroes into a new legend!
 
+![](https://raw.githubusercontent.com/francescocicala/eidoi-crusade/release/0.1/src/main/resources/icons/img01.png)
+
 ## Game mechanics
 The game is very simple. The first phase is called **Evocation**, and every Mage's alliance will be randomly created. The second phase is the **Crusade**, where the Mages will send their heroes into the battle. Your goal is to reduce the Health Points of the rival Mage to zero before he does the same with you!
 
