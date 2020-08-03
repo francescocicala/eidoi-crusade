@@ -1,10 +1,14 @@
 package francescocicala;
 
 public class Mage {
+  String name;
   private Integer healthPoints = 8;
   private final Alliance alliance = new Alliance();
 
-  
+  Mage(String mageName) {
+    name = mageName;
+  }
+
   /** 
    * Returns a String with info about mage's alliance.
    * @return String
@@ -12,7 +16,6 @@ public class Mage {
   public String allianceString() {
     return alliance.showAllianceString();
   }
-
   
   /** 
    * Returns the size of mage's alliance.
@@ -21,7 +24,6 @@ public class Mage {
   public Integer allianceSize() {
     return alliance.cardinality();
   }
-
   
   /** 
    * Adds eidos to mage's alliance.
@@ -30,7 +32,6 @@ public class Mage {
   public void draw(Eidos eidos) {
     alliance.addEidos(eidos);
   }
-
   
   /** 
    * Discard eidos from mage's alliance.
@@ -40,7 +41,6 @@ public class Mage {
     alliance.removeEidos(eidos);
   }
 
-  
   /** 
    * Returns mage's health points.
    * @return Integer
@@ -49,7 +49,6 @@ public class Mage {
     return healthPoints;
   }
 
-  
   /** 
    * Decreases mage's health points of an amount equal to dmg.
    * @param dmg Damages
@@ -58,12 +57,19 @@ public class Mage {
     healthPoints -= dmg;
   }
 
-  
   /** 
    * Returns a boolean for indicating if mage's health points are equal to or below zero.
    * @return boolean
    */
   public boolean isDead() {
     return healthPoints <= 0;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public Alliance getAlliance() {
+    return alliance;
   }
 }

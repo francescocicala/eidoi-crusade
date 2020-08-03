@@ -5,6 +5,8 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Deque;
+import java.util.Random;
+
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
@@ -14,13 +16,15 @@ public class ShuffledDeck {
   private Deque<Eidos> internal;
 
   /**
-   * Construct a ShuffledDeck object containing the Eidoi found in the .xml file at xmlFilename path.
+   * Construct a ShuffledDeck object containing the Eidoi found in the .xml file 
+   * at xmlFilename path.
    * @param xmlFilename Relative path to the .xml file
    * @throws SAXException
    * @throws IOException
    * @throws ParserConfigurationException
    */
-  ShuffledDeck(final String xmlFilename) throws SAXException, IOException, ParserConfigurationException {
+  ShuffledDeck(final String xmlFilename) throws SAXException, IOException, 
+      ParserConfigurationException {
     eidoiArr = xmlParser.getEidoiArr(xmlFilename);
     shuffleDeck();
   }
@@ -36,7 +40,7 @@ public class ShuffledDeck {
     Collections.shuffle(Arrays.asList(randomNum));
     internal = new ArrayDeque<Eidos>();
     for (int i = 0; i < randomNum.length; i++) {
-      internal.add(eidoiArr[i]);
+      internal.add(eidoiArr[randomNum[i]]);
     }
   }
 

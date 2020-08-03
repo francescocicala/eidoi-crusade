@@ -69,4 +69,13 @@ public class Alliance {
     }
     return out;
   }
+
+  public Eidos[] getEidoiArr() {
+    Object[] raw = internal.values().toArray();
+    Eidos[] out = new Eidos[raw.length];
+    for (int i = 0; i < raw.length; i++) {
+      out[i] = (Eidos) raw[i];
+    }
+    return out;
+  }
 }
